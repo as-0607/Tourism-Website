@@ -1,0 +1,517 @@
+<html>
+    <head>
+        <title>Project 3</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <img class="headerImage" src="images/Screenshot 2025-06-28 141503.png">
+                <div class="headerTitle"><h2>EGYPT</h2></div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Tips
+                    </a>
+                    <ul class="dropdown-menu" style="margin-top: 20px; background-color: rgba(255, 255, 255, 0.9);">
+                        <li><a class="dropdown-item" href="#">CAIRO</a></li>
+                        <li><a class="dropdown-item" href="#">ALEX</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">LUXOR</a></li>
+                        <li><a class="dropdown-item" href="#">ASWAN</a></li>
+                        <li><a class="dropdown-item" href="#">SHARM EL SHIKH</a></li>
+                        <li><a class="dropdown-item" href="#">EL GLALA</a></li>
+                        <li><a class="dropdown-item" href="#">MORE ...</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="searchInput form-control me-3" type="search" placeholder="Search" aria-label="Search"/>
+                    <button class="headerBtn btn me-3" type="submit">Search</button>
+                    <button type="button" class="btn headerBtn" data-bs-toggle="modal" data-bs-target="#loginModal">
+                        Login
+                    </button>
+                </form>
+                </div>
+            </div>
+            </nav>
+        </header>
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true" style="z-index: 3002;">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                        <div class="modal-header bg-info text-white">
+                            <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                            <div class="mb-3">
+                                <label for="email" class="modalText form-label">Email address</label>
+                                <input type="email" class="searchInput form-control" id="email" placeholder="Enter email">
+                                <div class="form-text">We'll never share your email with anyone else.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="modalText form-label">Password</label>
+                                <input type="password" class="searchInput form-control" id="password" placeholder="Password">
+                            </div>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="rememberMe">
+                                <label class="form-check-label" style="color: #5ccfef; font-weight: bold;" for="rememberMe">Remember me</label>
+                            </div>
+                            <hr>
+                            <button type="submit" class="btn headerBtn" style="margin-left: 20px; margin-right: 285;">Login</button>
+                            <button type="button" class="btn headerBtn" data-bs-dismiss="modal">Close</button>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+            <div class="fixedIcon" style="position: fixed; z-index: 3000; top: 260px; right: 60px;">
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            </div>
+
+        <main style="margin-top: 90px;">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="images/Screenshot 2025-07-02 142653-Picsart-AiImageEnhancer.png" class="d-block w-100 slidingImage">
+                    <div class="carousel-caption d-block" style="background-color: rgba(6, 158, 181, 0.3);">
+                        <div class="cairo-box">
+                            <h2 style="font-size: 44px;">CAIRO</h2>
+                            <p style="font-size: 18px;">We had such a great time in Egypt!</p>
+                            <button class="btn headerBtn" style="margin-bottom: 5px;">Visit Us</button>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="carousel-item">
+                    <img src="images/Screenshot 2025-06-30 163404-Picsart-AiImageEnhancer.png" class="d-block w-100 slidingImage">
+                    <div class="carousel-caption d-block" style="background-color: rgba(6, 158, 181, 0.3);">
+                        <div class="cairo-box">
+                            <h2 style="font-size: 44px;">ASWAN</h2>
+                            <p style="font-size: 18px;">Thank you, Aswan!</p>
+                            <button class="btn headerBtn" style="margin-bottom: 5px;">Visit Us</button>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="carousel-item">
+                    <img src="images/Screenshot 2025-07-02 143131-Picsart-AiImageEnhancer.png" class="d-block w-100 slidingImage">
+                    <div class="carousel-caption d-block" style="background-color: rgba(6, 158, 181, 0.3);">
+                        <div class="cairo-box">
+                            <h2 style="font-size: 44px;">SHARM EL SHIKH</h2>
+                            <p style="font-size: 18px;">We love this city!</p>
+                            <button class="btn headerBtn" style="margin-bottom: 5px;">Visit Us</button>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="carousel-item">
+                    <img src="images/Screenshot 2025-07-01 094018-Picsart-AiImageEnhancer.png" class="d-block w-100 slidingImage">
+                    <div class="carousel-caption d-block" style="background-color: rgba(6, 158, 181, 0.3);">
+                        <div class="cairo-box">
+                            <h2 style="font-size: 44px;">EL GLALH</h2>
+                            <p style="font-size: 18px;">We love this city!</p>
+                            <button class="btn headerBtn" style="margin-bottom: 5px;">Visit Us</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                </div>
+                <div class="container-fluid" style="min-height: 250px; max-height: 300px; background-color: #96d4db; border-radius: 0 0 10px 10px; border: 2px rgb(198, 198, 198) solid ; padding: 30px;">
+                    <h2 style="background: linear-gradient(to top, #4ed1ee, #4e2a91); background-clip: text; -webkit-text-fill-color: transparent;">WELCOME</h2>
+                    <p style="color: white; font-size: 18px;">Are you planning to visit Egypt? We offer the ultimate tour in Egypt, covering Cairo, alex. From a one day trip to a 10 day dream vacation, we will take care of all your needs. book hotels. 24/7 Customer Service.</p>
+                    <button class="learnBtn" style="position: relative;background-color: white; color: #4ed1ee; border-radius: 10px; width: 155px; height: 55px; font-size: 24px; border: 1px rgb(214, 214, 214) solid; margin-top: 5px;">Learn more</button>
+                </div>
+                <hr>
+        </main>
+        <section >
+            <div class="container-fluid pt-5 mb-4" style="background-color: #5999a0; min-height: 170px; max-height: 300px; border-radius: 10px;">
+                <h2 class="destH2">Popular destinations in Egypt</h2>
+            </div>
+            <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    GIZA CITY
+                </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body" style="background-color: #e5eaee;">
+                    Major tourist destinations include the millennia-old monuments in the Nile Valley, with the Pyramids and Great Sphinx at Giza being the most iconic.
+                </div>
+                </div>
+            </div>
+            <div class="accordion-item" style="background: linear-gradient(to top, white, white, white, rgba(177, 177, 177, 0.1))">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    LUXOR CITY
+                </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body" style="background-color: #e5eaee;">
+                    Luxor, located about 500 km south of Cairo, is the site of the ancient city of Thebes. It includes the ruins of the temple complexes at Karnak and Luxor, which stand within the modern city. On the opposite side of the Nile River lie the monuments, temples, and tombs of the West Bank Necropolis, home to the Valley of the Kings and the Valley of the Queens.
+                </div>
+                </div>
+            </div>
+            <div class="accordion-item" style="background: linear-gradient(to top, white, white, white, rgba(177, 177, 177, 0.1))">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    SINAI PENINSULA
+                </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body" style="background-color: #e5eaee;">
+                    Sinai is home to the beach resorts of Sharm el-Sheikh, Dahab, Nuweiba, and Taba, along with biblical sites like Mount Sinai (“Jabal Musa”). The nearby Saint Catherine’s Monastery, believed to be the oldest working Christian monastery in the world, adds to the region’s historical significance.
+                </div>
+                </div>
+            </div>
+            </div>
+            <hr>
+        </section>
+        <section>
+            <div class="container-fluid pt-3 pb-3" style="background-color: #5999a0; min-height: 90px; max-height: 300px; border-radius: 10px;">
+                <h2 class="tranH2">Translate From Arabic To English</h2>
+            </div>
+            <div class="container-fluid" style="height: 350px; background-color: #97d5db; border-radius: 0 0 10px 10px; padding: 30px;">
+                <h3 style="color: white; font-size: 26px;">Write and Translate <span style="color: #206377;">Press Here</span></h3>
+                <button type="button" class="copy-btn">Copy</button>
+                <textarea placeholder="Translate:" rows="6" ></textarea>
+            </div>
+            <hr>
+        </section>
+        <section>
+            <div class="container-fluid pt-3 pb-3" style="background-color: #5999a0; min-height: 90px; max-height: 300px; border-radius: 10px;">
+                <h2 class="tranH2">Translate From Arabic To Frensh</h2>
+            </div>
+            <div class="container-fluid" style="height: 350px; background-color: #97d5db; border-radius: 0 0 10px 10px; padding: 30px;">
+                <h3 style="color: white; font-size: 26px;">Write and Translate <span style="color: #206377;">Press Here</span></h3>
+                <button type="button" class="copy-btn">Copy</button>
+                <textarea placeholder="Translate:" rows="6" ></textarea>
+            </div>
+            <hr>
+        </section>
+        <section>
+            <div class="container-fluid pt-3 pb-3" style="background-color: #5999a0; min-height: 90px; max-height: 300px; border-radius: 10px;">
+                <h2 class="tranH2">Translate From Arabic To German</h2>
+            </div>
+            <div class="container-fluid" style="height: 350px; background-color: #97d5db; border-radius: 0 0 10px 10px; padding: 30px;">
+                <h3 style="color: white; font-size: 26px;">Write and Translate <span style="color: #206377;">Press Here</span></h3>
+                <button type="button" class="copy-btn">Copy</button>
+                <textarea placeholder="Translate:" rows="6" ></textarea>
+            </div>
+            <hr>
+        </section>
+        <section>
+            <div class="container-fluid fixedImg " style="margin-top: 25px; background-image: url(images/resize.jpg);"></div>
+            <div class="container-fluid pt-3 pb-3" style="margin-bottom: 60px; background-color: #5999a0; min-height: 100px; max-height: 300px; border-radius: 10px;">
+                <h2 class="tranH2" style="background: linear-gradient(to top, #2a93ab, #4913ad); background-clip: text; -webkit-text-fill-color: transparent;">POPULAR DESTINATIONS IN EGYPT</h2>
+            </div>
+            <div class="card_container container-fluid">
+                <div class="row">
+                    <div class="col-xl-4 col-md-6 col-12">
+                        <div class="card ">
+                            <div class="cardimg" style="background-image: url(images/Screenshot\ 2025-07-10\ 185758.png);"></div>
+                            <button>Know More</button>
+                            <div class="cardContent">
+                                <h4>CAIRO</h4>
+                                <p>Capital of Egypt</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 col-12">
+                        <div class="card card1">
+                            <div class="cardimg" style="background-image: url(images/Screenshot\ 2025-07-10\ 185805.png);"></div>
+                            <button>Know More</button>
+                            <div class="cardContent">
+                                <h4>ALEXANDRIA</h4>
+                                <p>The pride of the Mediterranean</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 col-12">
+                        <div class="card card2">
+                            <div class="cardimg" style="background-image: url(images/Screenshot\ 2025-07-10\ 185822.png);"></div>
+                            <button>Know More</button>
+                            <div class="cardContent">
+                                <h4>LUXOR</h4>
+                                <p>The Capital of the Ancient Kingdom</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 col-12">
+                        <div class="card ">
+                            <div class="cardimg" style="background-image: url(images/Screenshot\ 2025-07-10\ 190333.png);"></div>
+                            <button>Know More</button>
+                            <div class="cardContent">
+                                <h4>ASWAN</h4>
+                                <p>Nubian City in The South of Egypt</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 col-12">
+                        <div class="card card1">
+                            <div class="cardimg" style="background-image: url(images/Screenshot\ 2025-07-10\ 190339.png);"></div>
+                            <button>Know More</button>
+                            <div class="cardContent">
+                                <h4>NEW CAPITAL</h4>
+                                <p>The New Adminstrative Capital</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 col-12">
+                        <div class="card card2">
+                            <div class="cardimg" style="background-image: url(images/Screenshot\ 2025-07-10\ 190348.png);"></div>
+                            <button>Know More</button>
+                            <div class="cardContent">
+                                <h4>SHARM EL SHEIKH</h4>
+                                <p>Beautiful City in Egypt</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="card card3">
+                            <div class="cardimg" style="background-image: url(images/Screenshot\ 2025-07-10\ 190645.png);"></div>
+                            <button>Know More</button>
+                            <div class="cardContent">
+                                <h4>SIWA</h4>
+                                <p>Sunset Oasis</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="card card3">
+                            <div class="cardimg" style="background-image: url(images/Screenshot\ 2025-07-10\ 190657.png);"></div>
+                            <button>Know More</button>
+                            <div class="cardContent">
+                                <h4>HURGHADA</h4>
+                                <p>City on The Red Sea</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="container-fluid fixedImg " style="margin-bottom: 25px; background-image: url(images/Screenshot\ 2025-07-09\ 230845-Picsart-AiImageEnhancer.png);"></div>
+            <hr>
+        </section>
+        <section>
+            <div class="container-fluid pt-4 pb-4" style="margin-top: 25px; margin-bottom: 80px; background-color: #97d4da; border-radius: 10px;">
+                <h2 class="tranH2" style="background: linear-gradient(to top, #33ccd4, #bf34ff); background-clip: text; -webkit-text-fill-color: transparent;">THANKS FOR</h2>
+            </div>
+            <div class="container" style="margin-bottom: 130px;">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-6 col-12">
+                        <div class="thanksCards" style="background-image: url(images/download1.jpg);">
+                            <div class="overlay"></div>
+                            <div class="thanksTopContent">
+                                <h3 style="font-size: 26px;">All thanks and appreciation</h3>
+                                <p><i class="fa-regular fa-clock"></i> October 15, 2020</p>
+                            </div>
+                            <div class="thanksBottomCOntent">
+                                <div class="thanksimg" style="background-image: url(images/download1.jpg);"></div>
+                                <p style="font-size: 18px;">Eng. Mohammed Ismail <br> Director of UI/UX</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-12">
+                        <div class="thanksCards" style="background-image: url(images/images.jpg);">
+                            <div class="overlay"></div>
+                            <div class="thanksTopContent">
+                                <h3 style="font-size: 26px;">All thanks and appreciation</h3>
+                                <p><i class="fa-regular fa-clock"></i> October 15, 2020</p>
+                            </div>
+                            <div class="thanksBottomCOntent">
+                                <div class="thanksimg" style="background-image: url(images/images.jpg);"></div>
+                                <p style="font-size: 18px;">Eng. Islam Mohammed<br> Director of UI/UX</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-12">
+                        <div class="thanksCards" style="background-image: url(images/download2.jpg);">
+                            <div class="overlay"></div>
+                            <div class="thanksTopContent">
+                                <h3 style="font-size: 26px;">All thanks and appreciation</h3>
+                                <p><i class="fa-regular fa-clock"></i> October 15, 2020</p>
+                            </div>
+                            <div class="thanksBottomCOntent">
+                                <div class="thanksimg" style="background-image: url(images/download2.jpg);"></div>
+                                <p style="font-size: 18px;">Eng. Sally Maraush <br> Director of UI/UX</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr style="margin-bottom: 30px;">
+        </section>
+        <section>
+            <h2 style="margin-bottom: 15px; font-size: 36px; text-align: center; background: linear-gradient(to top, #33ccd4, #bf34ff); background-clip: text; -webkit-text-fill-color: transparent;">EGYPT NEWS</h2>
+            <div class="col-sm-10 col-12" style="margin: auto;">
+                <div class="newsCard ">
+                    <div class="newsImgR" style="background-image: url(images/download3.jpg);"></div>
+                    <div class="newsContentTopL">
+                        <h2 style="font-size: 40px; color: #2d6171;">Podcast Title</h2>
+                        <p><i class="fas fa-calendar-alt"></i> Mon, May 25th 2020</p>
+                        <div class="bar"></div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora eligendi quibusdam qui in nesciunt est odio deserunt quidem incidunt ducimus voluptatem atque placeat voluptatibus et consequuntur dolore, laboriosam voluptates veritatis!
+                        Numquam, pariatur modi soluta dicta veniam amet facilis possimus et minus explicabo quos quae reiciendis rerum delectus nobis recusandae perspiciatis. Debitis fugit odit corporis aliquam doloribus sed tenetur pariatur! Harum.</p>
+                    </div>
+                    <div class="newsContentBottomL">
+                        <div class="newsicons"><p><i class="fas fa-podcast"></i>Podcast</p></div>
+                        <div class="newsicons"><p><i class="fas fa-clock"></i>55 mins.</p></div>
+                        <div class="newsPlay"><a href="#"><i class="fas fa-play"></i>Play Eposides</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-10 col-12" style="margin: auto;">
+                <div class="newsCard ">
+                    <div class="newsImgL" style="background-image: url(images/5db3eae539942391678d4fa93e61886b-AQEpylwM0VFbEZ3E.avif);"></div>
+                    <div class="newsContentTopR">
+                        <h2 style="font-size: 40px; color: #2d6171;">Podcast Title</h2>
+                        <p><i class="fas fa-calendar-alt"></i> Mon, May 25th 2020</p>
+                        <div class="bar" style="background-color: #a73122;"></div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora eligendi quibusdam qui in nesciunt est odio deserunt quidem incidunt ducimus voluptatem atque placeat voluptatibus et consequuntur dolore, laboriosam voluptates veritatis!
+                        Numquam, pariatur modi soluta dicta veniam amet facilis possimus et minus explicabo quos quae reiciendis rerum delectus nobis recusandae perspiciatis. Debitis fugit odit corporis aliquam doloribus sed tenetur pariatur! Harum.</p>
+                    </div>
+                    <div class="newsContentBottomR">
+                        <div class="newsicons"><p><i class="fas fa-podcast"></i>Podcast</p></div>
+                        <div class="newsicons"><p><i class="fas fa-clock"></i>55 mins.</p></div>
+                        <div class="newsPlay redNewsPlay"><a href="#"><i class="fas fa-play"></i>Play Eposides</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-10 col-12" style="margin: auto;">
+                <div class="newsCard ">
+                    <div class="newsImgR" style="background-image: url(images/download4.jpg);"></div>
+                    <div class="newsContentTopL">
+                        <h2 style="font-size: 40px; color: #2d6171;">Podcast Title</h2>
+                        <p><i class="fas fa-calendar-alt"></i> Mon, May 25th 2020</p>
+                        <div class="bar" style="background-color: #78c014"></div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora eligendi quibusdam qui in nesciunt est odio deserunt quidem incidunt ducimus voluptatem atque placeat voluptatibus et consequuntur dolore, laboriosam voluptates veritatis!
+                        Numquam, pariatur modi soluta dicta veniam amet facilis possimus et minus explicabo quos quae reiciendis rerum delectus nobis recusandae perspiciatis. Debitis fugit odit corporis aliquam doloribus sed tenetur pariatur! Harum.</p>
+                    </div>
+                    <div class="newsContentBottomL">
+                        <div class="newsicons"><p><i class="fas fa-podcast"></i>Podcast</p></div>
+                        <div class="newsicons"><p><i class="fas fa-clock"></i>55 mins.</p></div>
+                        <div class="newsPlay yellowNewsPlay"><a href="#"><i class="fas fa-play"></i>Play Eposides</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-10 col-12" style="margin: auto;">
+                <div class="newsCard ">
+                    <div class="newsImgL" style="background-image: url(images/download5.jpg);"></div>
+                    <div class="newsContentTopR">
+                        <h2 style="font-size: 40px; color: #2d6171;">Podcast Title</h2>
+                        <p><i class="fas fa-calendar-alt"></i> Mon, May 25th 2020</p>
+                        <div class="bar" style="background-color: #b6b25a;"></div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora eligendi quibusdam qui in nesciunt est odio deserunt quidem incidunt ducimus voluptatem atque placeat voluptatibus et consequuntur dolore, laboriosam voluptates veritatis!
+                        Numquam, pariatur modi soluta dicta veniam amet facilis possimus et minus explicabo quos quae reiciendis rerum delectus nobis recusandae perspiciatis. Debitis fugit odit corporis aliquam doloribus sed tenetur pariatur! Harum.</p>
+                    </div>
+                    <div class="newsContentBottomR">
+                        <div class="newsicons"><p><i class="fas fa-podcast"></i>Podcast</p></div>
+                        <div class="newsicons"><p><i class="fas fa-clock"></i>55 mins.</p></div>
+                        <div class="newsPlay goldNewsPlay"><a href="#"><i class="fas fa-play"></i>Play Eposides</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 style="margin-top: 50px; margin-bottom: 30px; font-size: 36px; text-align: center; background: linear-gradient(to top, #33ccd4, #bf34ff); background-clip: text; -webkit-text-fill-color: transparent;">JOIN US</h2>
+            <div class="col-sm-10" style="margin: auto;">
+                <div class="row">
+                    <div class="JoinCards col-lg-3 col-sm-6 col-12">
+                        <h2 style="color: #0fc2f4;">Subscribe Now</h2>
+                        <div class="joinIcon" style="background-image: url(images/Screenshot\ 2025-07-14\ 132045.png);"></div>
+                        <h3><a href="#">Go To Link</a></h3>
+                    </div>
+                    <div class="JoinCards col-lg-3 col-sm-6 col-12">
+                        <h2 style="color: #0fc2f4;">Follow</h2>
+                        <div class="joinIcon" style="background-image: url(images/Screenshot\ 2025-07-14\ 132131.png);"></div>
+                        <h3><a href="#">Go To Link</a></h3>
+                    </div>
+                    <div class="JoinCards col-lg-3 col-sm-6 col-12">
+                        <h2 style="color: #0fc2f4;">Like The Page</h2>
+                        <div class="joinIcon" style="background-image: url(images/Screenshot\ 2025-07-14\ 132143.png);"></div>
+                        <h3><a href="#">Go To Link</a></h3>
+                    </div>
+                    <div class="JoinCards col-lg-3 col-sm-6 col-12">
+                        <h2 style="color: #0fc2f4;">Watch Vedios</h2>
+                        <div class="joinIcon" style="background-image: url(images/Screenshot\ 2025-07-14\ 131102.png);"></div>
+                        <h3><a href="#">Go To Link</a></h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container-fluid" style="padding-top: 20px; padding-bottom: 50px; min-height: 510px; max-height: 1800px; background-color: #00bbf3; margin-top: -15px;">
+                <div class="row">
+                    <div class="FooterDivs col-lg-4 col-sm-6 col-12">
+                        <hr>
+                        <img src="images/Screenshot 2025-06-28 141503.png" width="90" height="90" style="border-radius: 50%; box-shadow: 0 0 15px 5px rgba(255, 255, 255);">
+                        <p style="display: inline; font-size: 24px; margin-left: 15px;">Good Company</p>
+                        <hr>
+                        <p style="margin-bottom: 20px">Tel : 000-000-000</p>
+                        <p style="margin-bottom: 20px">Adress : Egypt</p>
+                        <p style="margin-bottom: 20px">FAX : 000-000-000</p>
+                    </div>
+                    <div class="FooterDivs col-lg-4 col-sm-6 col-12">
+                        <hr>
+                        <img src="images/Screenshot 2025-06-28 141503.png" width="90" height="90" style="border-radius: 50%; box-shadow: 0 0 15px 5px rgba(255, 255, 255);">
+                        <p style="display: inline; font-size: 24px; margin-left: 15px;">Important Links</p>
+                        <hr>
+                        <a href="#">Visit Us</a>
+                        <a href="#">Take alook</a>
+                        <a href="#">Your health is more important</a>
+                    </div>
+                    <div class="FooterDivs col-lg-4 col-sm-6 col-12">
+                        <hr>
+                        <img src="images/Screenshot 2025-06-28 141503.png" width="90" height="90" style="border-radius: 50%; box-shadow: 0 0 15px 5px rgba(255, 255, 255);">
+                        <p style="display: inline; font-size: 24px; margin-left: 15px;">Vision</p>
+                        <hr>
+                        <p style="margin-bottom: 20px">Services for all</p>
+                        <p style="margin-bottom: 20px">Provide best services</p>
+                        <p style="margin-bottom: 20px">You will be better than before</p>
+                    </div>
+                </div>
+                <hr>
+                <h3 style="text-align: center; background: linear-gradient(to top, #2a9ea4, #a900f8); background-clip: text; -webkit-text-fill-color: transparent;">COPYRIGHT &copy; 2020 SHIMAAHUSSIEN EL SAID, GOOD COMPANY. ALL RIGHTS</h3>
+                <hr>
+            </div>
+        </footer>
+
+        <script src="js/script.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
