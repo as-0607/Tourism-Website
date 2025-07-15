@@ -1,0 +1,454 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #d5dbdf !important;
+    padding: 0 5px ;
+}
+header {
+    position: fixed;
+    z-index: 3001;
+    opacity: 0.8;
+    top: 0;
+    width: 100%;
+}
+.headerImage {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    box-shadow: #cbcbcb 0px 0px 30px 0px ;
+    margin: 0 35px 0 25px;
+}
+.headerTitle {
+    border-right: 2.5px rgb(234, 234, 234) solid;
+    width: 105px;
+    height: 55px;
+    margin-top: 5px;
+    margin-right: 20px;
+    padding-top: 5px;
+}
+.headerTitle h2 {
+    background: linear-gradient(to top, #4ed1ee, #4e2a91);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.nav-item a {
+    color: #5ccfef;
+    font-size: 18px;
+}
+.nav-item a:hover {
+    color: #00aedf;
+}
+.nav-item a:focus {
+    color: #00aedf;
+}
+.dropdown {
+    border: 3px solid #00aedf;
+    border-radius: 10px;
+    background-color: rgb(240, 240, 240);
+}
+.dropdown-menu .dropdown-item:hover {
+    color: rgb(152, 152, 152);
+}
+.searchInput {
+    border: 2px solid #5ccfef !important;
+    height: 45px !important;
+    font-size: 18px !important;
+}
+.headerBtn{
+    font-size: 18px !important;
+    background-color: #5ccfef !important;
+    border: 0 !important;
+    color: white !important;
+}
+.headerBtn:hover {
+    opacity: 0.8;
+}
+.modalText {
+    font-size: 22px;
+    color: #5ccfef;
+}
+.fixedIcon a {
+    display: block;
+    text-decoration: none;
+    font-size: 68px;
+    color: #014a5d;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+.fixedIcon a:hover {
+    color: #73aebe;
+}
+.slidingImage {
+    height: 85vh !important;
+}
+.accordion-item .accordion-header button{
+    font-size: 22px !important;
+    background: linear-gradient(to top, #4ed1ee, #4e2a91) !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    font-weight: bold !important;
+}
+.destH2 {
+    text-align: center;
+    font-size: 44px;
+    color: white;
+}
+.tranH2 {
+    text-align: center;
+    font-size: 44px;
+    color: white;
+}
+.copy-btn {
+    display: block !important;
+    background-color: white !important;
+    font-size: 20px !important;
+    color: #00aedf !important;
+    padding: 6px 10px 10px 10px !important;
+    border-radius: 8px !important;
+    transition: 0.3s !important;
+    margin-bottom: 20px !important;
+    margin-top: 15px !important;
+    border: 2px #d6d6d6 solid !important;
+}
+.copy-btn:hover {
+    background-color: #c9cbc9 !important;
+    border: 2px white solid !important;
+}
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px #d6d6d6 solid;
+    border-radius: 8px;
+    font-size: 18px;
+}
+.fixedImg {
+    height: 360px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.card {
+    width: 360px !important;
+    height: 570px !important;
+    background-color: #ffffff !important;
+    margin: auto !important;
+    margin-bottom: 60px !important;
+    box-shadow: #cbcbcb 0px 0px 20px 2px !important;
+    position: relative !important;
+}
+.card::after {
+    content: "" !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    border-radius: 5px !important;
+    background-color: #02bbee !important;
+    opacity: 0.3 !important;
+    transition: 1s !important;
+}
+.card:hover::after {
+    width: 100% !important;
+    height: 100% !important;
+}
+.card::before {
+    content: "" !important;
+    position: absolute !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    border-radius: 5px !important;
+    background-color: #02bbee !important;
+    opacity: 0.3 !important;
+    transition: 1s !important;
+}
+.card:hover::before {
+    width: 100% !important;
+    height: 100% !important;
+}
+.cardimg {
+    width: 93%;
+    height: 78%;
+    margin: auto;
+    border-radius: 8px 8px 0 0;
+    margin-top: 0;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.card button {
+    position: absolute;
+    padding: 10px;
+    font-size: 18px ;
+    color: #ffffff;
+    background-color: #00aedf;
+    border: 0;
+    border-radius: 5px;
+    top: 80%;
+    left: 65%;
+    z-index: 1;
+}
+.cardContent {
+    position: absolute;
+    top: 81.5%;
+    left: 7%;
+}
+.cardContent h4{
+    color: #02bbee;
+}
+.cardContent p{
+    color: #4ed1ee;
+    font-size: 18px;
+}
+.thanksCards {
+    width: 400px;
+    height: 530px;
+    background-position: center;
+    background-size: 100% 100%;
+    margin: auto;
+    margin-bottom: 60px;
+    box-shadow: #cbcbcb 0px 0px 20px 2px;
+    position: relative;
+    border-radius: 20px;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.thanksCards:hover {
+    transform: scale(0.9, 0.9);
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(40, 60, 80, 0.7);
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.thanksCards:hover .overlay{
+    background-color: rgba(1, 49, 103, 0.7);
+}
+.thanksTopContent {
+    position: absolute;
+    top: 7%;
+    left: 9.5%;
+}
+.thanksBottomCOntent {
+    position: absolute;
+    top: 55%;
+    left: 9.5%;
+}
+.thanksimg {
+    background-position: center;
+    background-size: 100% 100%;
+    width: 110px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px rgb(155, 155, 155) solid;
+}
+.newsCard {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 480px;
+    max-height: 680px;
+    margin-bottom: 30px;
+    background: linear-gradient(to right, #bed3e3, #dee5e9);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(136, 99, 255, 0.3), 0 0 50px rgba(136, 99, 255, 0.2);
+}
+.bar {
+    transition: 0.5s;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    width: 60px;
+    height:6px;
+    border-radius: 10px;
+    background-color: #0576c2;
+}
+.newsCard:hover .bar{
+    width: 110px;
+}
+.newsImgR {
+    position: absolute;
+    width: 30%;
+    height: 110%;
+    right: -30px;
+    top: -25px;
+    background-position: center;
+    background-size: 100% 100%;
+    transform: rotate(-6deg);
+    transition: 0.5s;
+}
+.newsImgL {
+    position: absolute;
+    width: 30%;
+    height: 110%;
+    left: -30px;
+    top: -25px;
+    background-position: center;
+    background-size: 100% 100%;
+    transform: rotate(6deg);
+    transition: 0.5s;
+}
+.newsCard:hover .newsImgL, .newsCard:hover .newsImgR{
+    background-size: 110% 110%;
+}
+.newsicons, .newsPlay{
+    background-color: #9fa6ac;
+    border-radius: 3px;
+    height: 26px;
+    margin-right: 8px;
+    padding: 0 7px;
+    transition: 0.5s;
+}
+.newsicons:hover {
+    background-color: #6d6d6d;
+}
+.newsContentBottomL div a , .newsContentBottomR div a{
+    text-decoration: none;
+    color: #03558b;
+    transition: 0.5s;
+}
+.newsPlay:hover {
+    background-color: #0576c2;
+}
+.redNewsPlay:Hover {
+    background-color: #a73122; 
+}
+.yellowNewsPlay:Hover {
+    background-color: #78c014;
+}
+.goldNewsPlay:Hover {
+    background-color: #b6b25a;
+}
+.newsPlay:hover a{
+    color: #a9aba9;
+}
+.newsContentTopL {
+    margin: 60px; width: 60%;
+}
+.newsContentTopR {
+    margin-top: 60px; margin-left: 35%; width: 60%;
+}
+.newsContentBottomL {
+    display: flex; margin-left: 60px; margin-top: 100px; margin-bottom: 50px;
+}
+.newsContentBottomR {
+    display: flex; margin-left: 35%; margin-top: 100px; margin-bottom: 50px;
+}
+.JoinCards {
+    width: 285px !important;
+    height: 250px;
+    margin: auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 30px rgba(136, 99, 255, 0.3), 0 0 50px rgba(136, 99, 255, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 18px;
+    margin-bottom: 35px;
+}
+.joinIcon {
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    background-position: center;
+    background-size: 100% 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(136, 99, 255, 0.3), 0 0 50px rgba(136, 99, 255, 0.2);
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.joinCards a {
+    text-decoration: none;
+    color: #0fc2f4;
+}
+.FooterDivs {
+    width: 490px !important;
+    height: 320px;
+    margin: auto;
+    text-align: center;
+}
+footer hr{
+    height: 3px;
+    background-color: white;
+    color: white;
+}
+footer p {
+    color: white;
+    font-size: 18px;
+}
+footer a {
+    display: block;
+    text-decoration: none;
+    color: #006793;
+    margin-bottom: 20px;
+    font-size: 18px;
+    transition: 0.3s
+}
+footer a:hover {
+    color: #a9aba9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 650px) {
+    .destH2 {
+        font-size: 38px;
+        margin-top: 5px;
+    }
+    .tranH2 {
+        font-size: 38px;
+    }
+    .newsImgR , .newsImgL {
+        position: block;
+        width: 100%;
+        height: 200px;
+        left: 0;
+        top: 0;
+        background-position: center;
+        background-size: 100% 100%;
+        transform: rotate(0deg);
+    }
+    .newsContentTopL , .newsContentTopR {
+        margin-top: 230px;
+        margin-left: 30px;
+        width: 90%;
+    }
+    .newsContentBottomL , .newsContentBottomR {
+        margin-top: 0;
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 554px) {
+    .destH2 {
+        margin-top: -10px;
+    }
+    
+}
