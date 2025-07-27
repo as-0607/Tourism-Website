@@ -20,4 +20,4 @@ The website showcases beautiful destinations and encourages users to explore tra
 
 ## 🌐 Live Demo
 
-[View Live](https://as-0607.github.io/Tourism-Website/)  
+[View Live](https://as-0607.github.io/Tourism-Website/project-3/)  
